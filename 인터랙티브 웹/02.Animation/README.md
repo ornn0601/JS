@@ -73,4 +73,27 @@ transition-delay: 2s;
 <hr>
 
 ## 3. Animation  
- 
+- 차이점 : 중간의 변화를 줄 수 있다.  
+- 타임라인을 지정하여 움직이게 한다.  
+- 시작이 현재 위치라면 생략 가능하다.  
+
+- animetion-iteration-count  
+  - infinite : 무한 반복  
+
+- animation-direction  
+  - alternate : 시작과 끝을 반복이동  
+  - reverse : 반대로 이동  
+  - alternate-reverse : 반대로 반복 이동  
+
+- animation-fill-mode
+  - forwards : 끝나는 지점에서 멈춤  
+
+- animation-play-state: 정지 또는 재생  
+  - running : 재생 
+  - paused : 일시정지
+
+- frame by frame  
+  - 셀 애니메이션, 컷을 그려서 애니메이션 구현  
+  - steps() : 입력된 갯수만큼 분할 재생  
+
+
