@@ -12,27 +12,25 @@ jQuery(document).ready(function() {
 
   $(window).on('scroll', function() {
 
-    $('.o_countUp_1').each(function() {
+    let bottom_of_window = $(window).scrollTop() + $(window).height();
 
+    $('.o_countUp_1').each(function() {
       counter = $(this).find('.counter');
       let bottom_of_object = ($(this).offset().top) + $(this).outerHeight();
-      let bottom_of_window = $(window).scrollTop() + $(window).height();
   
       if (isAction1 === true) { return false; }
-      if( bottom_of_window > bottom_of_object ){
+      if( bottom_of_window > bottom_of_object ) {
         counteUp();
         isAction1 = true;
       }
     });
 
     $('.o_countUp_2').each(function() {
-
       counter = $(this).find('.counter');
       let bottom_of_object = ($(this).offset().top) + $(this).outerHeight();
-      let bottom_of_window = $(window).scrollTop() + $(window).height();
-  
+
       if (isAction2 === true) { return false; }
-      if( bottom_of_window > bottom_of_object ){
+      if( bottom_of_window > bottom_of_object ) {
         counteUp();
         isAction2 = true;
       }
