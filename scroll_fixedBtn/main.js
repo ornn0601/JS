@@ -33,6 +33,7 @@ jQuery(document).ready(function ($) {
     });
 
     // 픽스메뉴 설정
+    // 다음에 나오는 콘텐츠에 픽스버튼 만큼의 높이를 주어 버튼이 고정되면서 생기는 여백을 대신하여 준다. (깜빡이는 효과 제거)
     function hasScrolled() {
       let st = $(this).scrollTop();
 
