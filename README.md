@@ -12,3 +12,13 @@ if (stickySection.length){
   stickyOffsetTop = stickySection.offset().top;
 }
 ```
+  
+---
+## Table 번호 넣기    
+```js  
+let tableNum = $(".table_num");
+for (let i = 0; i <= tableNum.length; i++) {
+    tableNum.text(tableNum[i - 1] = i + 1);
+}
+```  
+  
