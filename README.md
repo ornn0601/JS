@@ -22,3 +22,13 @@ for (let i = 0; i <= tableNum.length; i++) {
 }
 ```  
   
+---  
+## 주소 복사  
+```js
+클릭버튼.on('click', function () {
+  navigator.clipboard.writeText('복사될 주소').then(funct() {
+    alert('URL 주소가 복사 되었습니다. 이제 지인에게 혜택을 공유하세요!')
+  });
+});
+```  
+  
