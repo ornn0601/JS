@@ -32,3 +32,30 @@ for (let i = 0; i <= tableNum.length; i++) {
 });
 ```  
   
+---
+## 콘텐츠 순차적으로 나타나기  
+```js
+$(function() {
+  let idx = 0; // 인덱스
+	setInterval(time, 500); // 실행
+
+	function time(){ 
+		brandText.eq(idx).addClass('active'); // active 클래스 삽입
+		idx++;
+
+		if(idx >= brandText.length) { // 완료되면 인덱스 초기화
+      idx = 0;
+	  }
+  }
+});
+```
+
+---
+## 클릭 스크롤 탑  
+```js
+$('#scrollTop').on('click', function() {
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+  return false;
+});
+``` 
+
